@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job 04</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Ajout du header avec une liste de liens -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">À propos</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="hamburger">&#9776;</div>
+        </nav>
+    </header>
+
+    <!-- Contenu de la page -->
+    <section class="section1">Section 1</section>
+    <section class="section2">Section 2</section>
+    <section class="section3">Section 3</section>
+    <section class="section4">Section 4</section>
+
+    <!-- Ajout du script JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Sélectionne le bouton hamburger
+            var hamburger = document.querySelector('.hamburger');
+            // Sélectionne la liste de liens
+            var navList = document.querySelector('nav ul');
+
+            // Ajoute un gestionnaire d'événement pour le clic sur le bouton hamburger
+            hamburger.addEventListener('click', function () {
+                // Basculer la visibilité de la liste de liens
+                navList.style.display = (navList.style.display === 'block') ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>
